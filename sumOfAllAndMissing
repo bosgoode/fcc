@@ -1,0 +1,13 @@
+function sumAll(arr) {
+  let total = 0;
+ return arr.reduce((acc,curr) => {
+   for (let i = Math.min(acc,curr); i <= Math.max(acc,curr); i++) {
+     total += i
+   }
+     return total
+ })
+};
+
+console.log(sumAll([1, 4]));
+
+/////
